@@ -1,0 +1,279 @@
+<meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minumun-scale1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<div style="max-width: 1366px; margin: 20px auto 0 auto; background-color: #ffffff;">
+    <header>
+        <!-- Sección izquierda del header con el texto "OpenMariva" -->
+        <div class="container-fluid py-2 bg-light">
+            <div class="row align-items-center">
+                <div class="col">
+                    <a routerLink="/ruta-actual">
+                        <!-- Ajustar el tamaño del texto de OpenMariva -->
+                        <img src="assets/logo-openmariva.png" alt="Logo OpenMariva"
+                            style="width: 268.33px; height: 40px; top: 46px; left: 80px;">
+                    </a>
+                </div>
+
+                <!-- Sección derecha del header con las secciones agrupadas -->
+                <div class="col-auto d-flex align-items-center justify-content-end">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <!-- Ajustar el tamaño del texto de las secciones -->
+                            <a routerLink="/grupo-mariva" target="_blank">
+                                <img src="assets/grupo-mariva.png" alt="Grupo Mariva">
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a routerLink="/informacion-tecnica" target="_blank">
+                                <img src="assets/informacion-tecnica.png" alt="Informacion Tecnica">
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a routerLink="/modulos" target="_blank">
+                                <img src="assets/modulos.png" alt="Modulos">
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <!-- Ajustar el color del texto de la palabra "Ingresar" -->
+                            <a target="_blank">
+                            <button (click)="redirectToLogin()">
+                                <img src="assets/ingresar-button.png" alt="Ingresar">
+                            </button>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor que envuelve las dos imágenes -->
+    <div
+        style="position: relative; width: 1366px; height: 541px; margin-top: 20px; background: url('assets/imagen-fondo-rectangle.png') no-repeat; background-size: cover; opacity:  0.9;">
+        <!-- Imagen del rectángulo -->
+        <img src="assets/rectangle1.png" alt="Rectangulo"
+            style="max-width: 100%; position: absolute; top: 0; left: 0; background: #3A8AAD99; opacity: 0.6;">
+    </div>
+
+    <!-- Contenedor del rectángulo con texto e imágenes -->
+    <div style="width: 968px; margin: 0 auto; text-align: center; position: relative; top: -424px;">
+        <!-- Contenido dentro del rectángulo -->
+        <p
+            style="font-family: Source Sans Pro; font-size: 38px; font-weight: 600; line-height: 42px; letter-spacing: 0em; color: #FFFFFF;">
+            Una solución ágil, segura e innovadora para integrarse con servicios de Grupo Mariva.
+        </p>
+
+        <!-- Contenedor de imágenes -->
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+
+            <!-- Imagen de Cuentas -->
+            <div
+                style="width: 154.11px; height: 118.12px; margin-right: 10px; position: relative; border-radius: 20px; background-color: rgba(255, 255, 255, 0.6); box-shadow: 0px 0px 6px 0px #00000026;">
+                <img src="assets/logo-cuentas.png" alt="Logo Cuentas"
+                    style="width: 88.59px; height: 87.21px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            </div>
+
+            <!-- Imagen de Inversiones -->
+            <div
+                style="width: 154.11px; height: 118.12px; margin-right: 10px; position: relative; border-radius: 20px; background-color: rgba(255, 255, 255, 0.6); box-shadow: 0px 0px 6px 0px #00000026;">
+                <img src="assets/logo-inversiones.png" alt="Logo Inversiones"
+                    style="width: 106.12px; height: 88.07px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            </div>
+
+            <!-- Imagen de Recaudaciones -->
+            <div
+                style="width: 154.11px; height: 118.12px; margin-right: 10px; position: relative; border-radius: 20px; background-color: rgba(255, 255, 255, 0.6); box-shadow: 0px 0px 6px 0px #00000026;">
+                <img src="assets/logo-recaudaciones.png" alt="Logo Recaudaciones"
+                    style="width: 131.04px; height: 90.66px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            </div>
+
+            <!-- Imagen de Transferencias -->
+            <div
+                style="width: 154.11px; height: 118.12px; margin-right: 10px; position: relative; border-radius: 20px; background-color: rgba(255, 255, 255, 0.6); box-shadow: 0px 0px 6px 0px #00000026;">
+                <img src="assets/logo-transferencias.png" alt="Logo Transferencias"
+                    style="width: 132.88px; height: 88.07px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            </div>
+
+            <!-- Imagen de eCheq -->
+            <div
+                style="width: 154.11px; height: 118.12px; margin-right: 10px; position: relative; border-radius: 20px; background-color: rgba(255, 255, 255, 0.6); box-shadow: 0px 0px 6px 0px #00000026;">
+                <img src="assets/logo-echeq.png" alt="Logo eCheq"
+                    style="width: 91.36px; height: 83.76px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            </div>
+
+            <!-- Imagen de Billetera -->
+            <div
+                style="width: 154.11px; height: 118.12px; margin-right: 10px; position: relative; border-radius: 20px; background-color: rgba(255, 255, 255, 0.6); box-shadow: 0px 0px 6px 0px #00000026;">
+                <img src="assets/logo-billetera.png" alt="Logo Billetera"
+                    style="width: 80.28px; height: 81.17px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            </div>
+        </div>
+
+        <!-- Nueva imagen con texto -->
+        <div style="width: 100%; text-align: center; margin-top: 20px;">
+            <img src="assets/suite-imagen-debajo.png" alt="Nueva Imagen con Texto">
+        </div>
+
+        <!-- Contenedor de la imagen del botón -->
+        <div style="position: relative; width: 100%; text-align: center; margin-top: 20px;">
+            <img src="assets/boton-registrate.png" alt="Botón Regístrate"
+                style="border-radius: 8px; background: #1E4287;">
+        </div>
+    </div>
+
+
+    <!-- Contenedor de la nuevas imagenes -->
+    <div
+        style="position: absolute; width: 195px; height: 38px; top: 792px; left: calc(50% - 97.5px); text-align: center;">
+        <img src="assets/suite-imagen-debajo-contenedor.png" alt="Imagen con Texto"
+            style="width: 100%; height: 100%;  font-family: Lato; font-size: 32px; font-weight: 600; line-height: 38px; letter-spacing: 0em;">
+    </div>
+
+    <div
+        style="position: absolute; width: 1206px; height: 62px; top: 842px; left: calc(50% - 603px); text-align: center;">
+        <img src="assets/imagen-grupo-financiero.png" alt="Imagen con Texto"
+            style="width: 100%; height: 100%; font-family: Lato; font-size: 26px; font-weight: 400; line-height: 31px; letter-spacing: 0em;">
+    </div>
+
+    <div
+        style="position: absolute; width: 1099.61px; height: 56px; top: 928px; left: calc(50% - 549.805px); text-align: center;">
+        <img src="assets/grupos-mariva.png" alt="Imagen con Texto"
+            style="width: 100%; height: 100%; font-family: Lato; font-size: 26px; font-weight: 400; line-height: 31px; letter-spacing: 0em;">
+    </div>
+
+    <div
+        style="position: absolute; width: 1164px; height: 126px; top: 1019px; left: calc(50% - 582px); text-align: center; border-left: 1px solid #3A8AAD;">
+        <img src="assets/grupos-textos.png" alt="Imagen con Texto"
+            style="width: 100%; height: 100%; font-family: Lato; font-size: 26px; font-weight: 400; line-height: 31px; letter-spacing: 0em;">
+    </div>
+
+    <!-- Nuevo rectángulo con imágenes -->
+    <div
+        style="position: absolute; width: 1366px; height: 681px; top: 1217px; left: 0; right: 0; margin-left: auto; margin-right: auto; background: #DBDBDD4D;">
+
+        <div style="position: absolute; top: 50px; left: calc(50% - 139.5px); width: 279px; text-align: center;">
+
+            <p
+                style="font-family: Lato; font-size: 32px; font-weight: 600; line-height: 38px; letter-spacing: 0em; color: #1E4287; margin: 0;">
+                <span style="white-space: nowrap;">Información</span>
+                <span style="white-space: nowrap; margin-left: 10px;">técnica</span>
+            </p>
+        </div>
+    </div>
+
+    <div
+        style="position: absolute; width: 1206px; height: 62px; top: 1322px; left: calc(50% - 603px); text-align: center;">
+        <p
+            style="font-family: Lato; font-size: 26px; font-weight: 400; line-height: 31px; letter-spacing: 0em; color: #5D5F66; margin: 0;">
+            Utilizamos el modelo de Api Rest con formato Json para lograr establecer un puente de comunicación seguro y
+            estandarizado.
+        </p>
+    </div>
+
+    <!-- Contenedor de la "infografia" -->
+    <div
+        style="position: absolute; width: 564px; height: 434px; top: 1408px; left: calc(50% - 282px); text-align: center;">
+        <img src="assets/infografia1.png" alt="Infografía 1"
+            style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+    </div>
+
+    <div
+        style="position: absolute; width: 124px; height: 38px; top: 1970px; left: 931px; font-family: Lato; font-size: 32px; font-weight: 600; line-height: 38px; letter-spacing: 0em; text-align: center; color: #1E4287;">
+        Módulos
+    </div>
+
+    <div
+        style="position: absolute; width: 1206px; height: 31px; top: 2020px; left: 380px; font-family: Lato; font-size: 26px; font-weight: 400; line-height: 31px; letter-spacing: 0em; text-align: center; color: #5D5F66;">
+        Nuestros servicios están segmentados por funcionalidad y productos.
+    </div>
+
+    <!-- Contenedor de las flechas -->
+    <div style="position: absolute; width: 330px; height: 52px; top: 2172px; left: 260px;">
+
+        <!-- Flecha1 (CUENTAS) -->
+        <div style="position: relative; width: 100%; height: auto; margin-top: -80px;">
+            <!-- Imagen con forma de flecha -->
+            <img src="assets/flecha12.png" alt="Flecha12" style="width: 100%; height: auto;">
+            <!-- Texto "CUENTAS" dentro de la imagen -->
+            <div
+                style="position: absolute; width: 107px; height: 33px; margin-top: 10px;  margin-left: 25px; top: 0; left: 0; display: flex; align-items: center; justify-content: center; font-family: Source Sans Pro; font-size: 26px; font-weight: 700; line-height: 33px; letter-spacing: 0em; text-align: left; color: #FFFFFF;">
+                CUENTAS
+            </div>
+        </div>
+        <!-- Flecha2 (INVERSIONES) -->
+        <div style="position: relative; width: 100%; height: auto; margin-top: 25px;">
+            <!-- Imagen con forma de flecha -->
+            <img src="assets/flecha13.png" alt="Flecha2" style="width: 100%; height: auto;">
+            <!-- Texto "INVERSIONES" dentro de la imagen -->
+            <div
+                style="position: absolute; width: 107px; height: 33px; margin-top: 10px;  margin-left: 25px; top: 0; left: 25px; display: flex; align-items: center; justify-content: center; font-family: Source Sans Pro; font-size: 26px; font-weight: 700; line-height: 33px; letter-spacing: 0em; text-align: left; color: #FFFFFF;">
+                INVERSIONES
+            </div>
+        </div>
+
+        <!-- Flecha3 (RECAUDACIONES) -->
+        <div style="position: relative; width: 100%; height: auto; margin-top: 25px;">
+            <!-- Imagen con forma de flecha -->
+            <img src="assets/flecha13.png" alt="Flecha3" style="width: 100%; height: auto;">
+            <!-- Texto "RECAUDACIONES" dentro de la imagen -->
+            <div
+                style="position: absolute; width: 107px; height: 33px; margin-top: 10px;  margin-left: 25px; top: 0; left: 44px; display: flex; align-items: center; justify-content: center; font-family: Source Sans Pro; font-size: 26px; font-weight: 700; line-height: 33px; letter-spacing: 0em; text-align: left; color: #FFFFFF;">
+                RECAUDACIONES
+            </div>
+        </div>
+
+        <!-- Flecha4 (TRANSFERENCIAS) -->
+        <div style="position: relative; width: 100%; height: auto; margin-top: 25px;">
+            <!-- Imagen con forma de flecha -->
+            <img src="assets/flecha13.png" alt="Flecha4" style="width: 100%; height: auto;">
+            <!-- Texto "TRANSFERENCIAS" dentro de la imagen -->
+            <div
+                style="position: absolute; width: 107px; height: 33px; margin-top: 10px;  margin-left: 25px; top: 0; left: 50px; display: flex; align-items: center; justify-content: center; font-family: Source Sans Pro; font-size: 26px; font-weight: 700; line-height: 33px; letter-spacing: 0em; text-align: left; color: #FFFFFF;">
+                TRANSFERENCIAS
+            </div>
+        </div>
+
+        <!-- Flecha5 (sin texto) -->
+        <div style="width: 100%; height: auto; margin-top: 25px;">
+            <!-- Imagen con forma de flecha -->
+            <img src="assets/flecha13.png" alt="Flecha5" style="width: 100%; height: auto;">
+        </div>
+
+        <!-- Flecha6 (BILLETERA) -->
+        <div style="position: relative; width: 100%; height: auto; margin-top: 25px;">
+            <!-- Imagen con forma de flecha -->
+            <img src="assets/flecha13.png" alt="Flecha6" style="width: 100%; height: auto;">
+            <!-- Texto "BILLETERA" dentro de la imagen -->
+            <div
+                style="position: absolute; width: 107px; height: 33px; margin-top: 10px;  margin-left: 25px; top: 0; left: 18px; display: flex; align-items: center; justify-content: center; font-family: Source Sans Pro; font-size: 26px; font-weight: 700; line-height: 33px; letter-spacing: 0em; text-align: left; color: #FFFFFF;">
+                BILLETERA
+            </div>
+        </div>
+    </div>
+
+    <div
+        style="position: absolute; width: 420px; height: 39px; top: 2546px; left: 760px; text-align: center; align-content: center; margin-top: 20px;">
+        <button (click)="redirectToURL()"
+            style="width: 100%; height: 100%; border: none; border-radius: 8px; background-color: #1E4287; cursor: pointer;">
+            <img src="assets/button-open-mariva2.png" alt="Botón" style="width: 100%; height: 100%;">
+        </button>
+    </div>
+
+    <!-- Nuevo texto a la derecha de la flecha "CUENTAS" -->
+    <div
+        style="position: relative; text-align: right; width: 840px;  height: 52px; left: 446px;  top: 1150px; right: inherit;; margin-top: -40px; font-family: Lato; font-size: 22px; font-weight: 400; line-height: 26px; letter-spacing: 0em; color: #35AAB7;">
+        Este set de Apis tiene como principal objetivo proveer información actualizada sobre el estado de la/s cuenta/s
+        de nuestros clientes
+    </div>
+    <!-- Footer -->
+    <div style="position: absolute; width: 1366px; height: 261px; top: 2657px; ">
+        <!-- Contenido del footer, como texto o imágenes -->
+        <img src="assets/mariva.png" alt="Mariva13" style="width: 100%; height: 100%;">
+    </div>
+
+</div>

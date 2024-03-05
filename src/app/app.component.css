@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .header-left img {
+    width: auto;
+    height: 40px;
+  }
+  
+  .header-right a img {
+    margin-left: 10px;
+  }
+  
+  /* Background container */
+  .background-container {
+    width: 100%;
+    height: auto;
+  }
+  
+  .background-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Content container */
+  .content-container {
+    width: 100%;
+    max-width: 968px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+  
+  .content-container p {
+    font-size: 18px;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .image-container .service-image {
+    width: 20%;
+    margin: 10px;
+  }
+  
+  .image-container .service-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .new-image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .button-container button {
+    border: none;
+    border-radius: 8px;
+    background-color: #1E4287;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* New image text container */
+  .new-image-text-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .new-image-text-container img {
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* New rectangle container */
+  .new-rectangle-container {
+    width: 100%;
+    max-width: 1366px;
+    margin: 20px auto;
+    background: #DBDBDD4D;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .new-rectangle-container p {
+    font-size: 18px;
+  }
+  
+  /* Arrow container */
+  .arrow-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .arrow {
+    width: 150px;
+    margin: 10px;
+  }
+  
+  .arrow img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .arrow p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  /* Arrow text */
+  .arrow-text {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+    margin-top: -40px;
+  }
+  
+  /* Footer */
+  footer {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  footer img {
+    width: 100%;
+    height: auto;
+  }
+  
