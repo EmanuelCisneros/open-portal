@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    height: 100vh;
+    min-height: 100vh; /* Cambiado a min-height para asegurar que el contenedor se expanda según el contenido */
     position: relative;
 }
 
@@ -44,6 +44,20 @@
 }
 
 .success-image {
-    width: 400px; 
+    width: 90%; 
+    max-width: 700px; 
     height: auto;
+    max-height: 400px;
+}
+
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px; 
+    }
+
+    .success-image {
+        max-width: 300px; 
+    }
 }

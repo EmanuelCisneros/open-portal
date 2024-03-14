@@ -1,0 +1,31 @@
+<link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+<div class="container">
+    <div class="background-images">
+        <div class="image-container">
+            <img class="left-image" src="assets/login-rectangle-uno.png" alt="image1">
+            <img class="right-image" src="assets/login-rectangle-dos.png" alt="image2">
+        </div>
+    </div>
+    <div class="content">
+        <form [formGroup]="loginForm" (ngSubmit)="submitForm()">
+            <img src="assets/logo-open-mariva-rgb.png" alt="logo" class="custom-logo" style="margin-top: 20px;">
+            <h2
+                style="font-family: Lato; font-size: 26px; font-weight: 600; line-height: 17px; letter-spacing: 0em; text-align: left; margin-top: 20px;">
+                </h2>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" formControlName="email">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Código de acceso</label>
+                <input type="password" class="form-control" id="password" formControlName="password">
+                <a routerLink="/recovery-password" class="forgot-password-link" style="font-family: Lato; font-size: 14px; font-weight: 600; line-height: 17px; letter-spacing: 0em; text-align: left; margin-top: 10px; display: block;">Olvidé mi código</a>
+            </div>
+            <button type="submit" class="custom-button">Ingresar</button>
+        </form>
+        <a routerLink="/registro" class="register-button">Regístrate</a>
+        <p class="footer-text" style="margin-top: 500px;">Políticas de privacidad | Términos y condiciones | Soporte</p>
+    </div>
+</div>

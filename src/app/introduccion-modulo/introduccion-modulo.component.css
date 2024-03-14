@@ -1,0 +1,81 @@
+.navigation-bar {
+    width: 248px;
+    height: 768px;
+    display: flex;
+    flex-direction: column;
+    background-color: #3A8AAD;
+}
+
+.logo-container {
+    width: 248px;
+    padding: 12px 16px;
+}
+
+.logo-container img {
+    width: 188px;
+    height: 28px;
+}
+
+.menu-item {
+    width: 248px;
+    height: 40px;
+    padding: 12px 16px;
+    background-color: #3A8AAD;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative; 
+}
+
+.menu-title {
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.submenu {
+    display: none;
+    flex-direction: column;
+    background-color: #3A8AAD;
+    padding: 8px 0;
+    position: absolute;
+    top: calc(100% + 8px); 
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu-item:hover .submenu {
+    display: flex;
+    position: absolute;
+}
+
+.menu-item + .menu-item {
+    margin-top: 8px;
+}
+
+.logout-container {
+    width: 248px;
+    height: 40px;
+    padding: 12px 16px;
+    background-color: #3A8AAD;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logout-button {
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-left: 10px;
+}

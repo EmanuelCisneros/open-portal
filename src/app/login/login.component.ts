@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-login-page',
-  templateUrl: './login-page.component.html',
-  styleUrls: ['./login-page.component.css']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
-export class LoginPageComponent implements OnInit {
+export class LoginComponent implements OnInit {
 
   loginForm!: FormGroup; 
 
@@ -15,10 +15,8 @@ export class LoginPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
-      fullName: ['', Validators.required],
-      company: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      phone: ['', [Validators.required, Validators.pattern(/^\+54\d{4}\s\d{3}-\d{4}$/)]]
+      password: ['', Validators.required]
     });
   }
 
