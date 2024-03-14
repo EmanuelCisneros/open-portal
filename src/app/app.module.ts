@@ -10,7 +10,10 @@ import { ConsultaComponent } from './consulta/consulta.component';
 import { AdministracionComponent } from './administracion/administracion.component';
 import { ExternalLayoutComponent } from './external-layout/external-layout.component';
 import { LoginPageModule } from './login-page/login-page.module';
-import { SuccessPageComponent } from './success-page/success-page.component';
+import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RecoveryPasswordComponent } from './recovery-password/recovery-password.component';
+import { IntroduccionModuloComponent } from './introduccion-modulo/introduccion-modulo.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +24,15 @@ import { SuccessPageComponent } from './success-page/success-page.component';
     ConsultaComponent,
     AdministracionComponent,
     ExternalLayoutComponent,
-    SuccessPageComponent,
+    LoginComponent,
+    RecoveryPasswordComponent,
+    IntroduccionModuloComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     LoginPageModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

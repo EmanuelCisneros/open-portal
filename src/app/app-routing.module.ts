@@ -2,15 +2,30 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ExternalLayoutComponent } from './external-layout/external-layout.component';
 import { SuccessPageComponent } from './success-page/success-page.component';
+import { LoginComponent } from './login/login.component';
+import { RecoveryPasswordComponent } from './recovery-password/recovery-password.component';
+import { IntroduccionModuloComponent } from './introduccion-modulo/introduccion-modulo.component';
 
 const routes: Routes = [
   { path: '', component: ExternalLayoutComponent },
   {
-    path: 'login',
+    path: 'registro',
     loadChildren: () =>
       import('./login-page/login-page.module').then((m) => m.LoginPageModule),
   },
   { path: 'success', component: SuccessPageComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'recovery-password', component: RecoveryPasswordComponent },
+  { path: 'introduccion-modulo', component: IntroduccionModuloComponent },
+
+
+
+/*
+{
+  path: 'success',
+  loadChildren: () =>
+    import('./success-page/success-page.module').then((m) => m.SuccessPageModule),
+},*/
 ];
 
 
