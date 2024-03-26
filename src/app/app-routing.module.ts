@@ -5,6 +5,7 @@ import { SuccessPageComponent } from './success-page/success-page.component';
 import { LoginComponent } from './login/login.component';
 import { RecoveryPasswordComponent } from './recovery-password/recovery-password.component';
 import { IntroduccionModuloComponent } from './introduccion-modulo/introduccion-modulo.component';
+import { ServicioModuloComponent } from './servicio-modulo/servicio-modulo.component';
 
 const routes: Routes = [
   { path: '', component: ExternalLayoutComponent },
@@ -17,6 +18,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'recovery-password', component: RecoveryPasswordComponent },
   { path: 'introduccion-modulo', component: IntroduccionModuloComponent },
+  { path: 'servicio-modulo', component: ServicioModuloComponent },
+
 
 
 

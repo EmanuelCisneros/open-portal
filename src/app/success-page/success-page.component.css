@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    min-height: 100vh; /* Cambiado a min-height para asegurar que el contenedor se expanda según el contenido */
+    min-height: 100vh; 
     position: relative;
 }
 
