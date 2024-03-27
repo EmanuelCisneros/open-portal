@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatListModule } from '@angular/material/list';
 import { ServicioModuloComponent } from './servicio-modulo/servicio-modulo.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 
@@ -27,6 +28,7 @@ import { ServicioModuloComponent } from './servicio-modulo/servicio-modulo.compo
     RecoveryPasswordComponent,
     IntroduccionModuloComponent,
     ServicioModuloComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
